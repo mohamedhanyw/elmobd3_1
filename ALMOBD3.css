@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background: #000000;
+    color: #fefefe;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+               /**  ( 1 )  Home  **/
+
+.Home{
+    /*! For Fade animation ..    */
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+
+    background-image: url(Imgs/bg_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+}
+.title_1{
+    font-family: 'Mokoto', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.7rem;
+
+}
+
+.title_2{
+    font-size:1.5rem ;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+}
+
+.home-btn{
+    background-color: #465146; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Audiowide', cursive;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 15px; 
+    transition: background-color 0.3s ease;
+
+}
+
+.home-btn:hover{
+    background-color:#212521 ;
+}
+
+
+.underline {
+    display: block;
+    width: 0px;  
+    height: 3px;   
+    background-color: #adfdff;  
+    margin-top: 5px;  
+    transition: width 3s ease-in-out;
+}
+
+
+#bottomWord {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;  
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/*? Responsive Section (Home)  */
+@media (max-width: 768px) {
+    .Home {
+        background-position: center top; /* Aligns the image to the top on smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller font size on mobile */
+    }
+
+    .title_2 {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
+}
+
+
+
+/* word-wrap: break-word; */
+
+  /**  ( 2 )  Artificial Intelligence  **/
+
+.container_2{
+    position: relative;
+    background-image: url(Imgs/bg_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.Ai_sec{
+    width: 50%;
+    padding: 50px;
+
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: transform 1.2s ease-in-out; 
+    
+}
+
+.h2_title2{
+    font-size: 3.5rem;
+}
+
+.paragraph_ai1{
+    padding-top:20px ;
+}
+
+
+#bottomWord2 {
+    position: absolute; /* Absolute positioning relative to .container_2 */
+    bottom: 10px; 
+    left: 10px;  
+    font-size:1.9rem; 
+    font-weight: bold;
+    direction: ltr;
+}
+
+.underline2 {
+    display: inline-block;
+    width: 0; 
+    height: 3px; 
+    background-color: #adfdff; 
+    margin-top: 5px; /* Space between the word and the underline */
+    display: block;
+    transition: width 3s ease-in-out;
+}
+
+.underline2.active{
+    width: 90px;
+}
+
+/*? Responsive Section Ai  */
+
+@media (max-width: 600px){
+
+    .container_2{
+        background-position: center ;
+        /* overflow-x: hidden; */
+    }
+    .Ai_sec{
+        width:90%;
+        padding: 10px;
+    }
+    .h2_title2{
+        font-size: 2.9rem;
+    }
+    .paragraph_ai1{
+        font-size: 16px;
+    }
+    #bottomWord2{
+        font-size: 20px;
+    }
+    .underline2{
+        height: 3px;
+        max-width: 45px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+
+    .container_2{
+        background-position: center ;
+        /* overflow-x: hidden; */
+    }
+    .Ai_sec{
+        width: 70%;
+        padding: 10px;
+    }
+    .h2_title2{
+        font-size: 3.5rem;
+    }
+    .paragraph_ai1{
+        font-size: 17px;
+    }
+    #bottomWord2{
+        font-size: 20px;
+    }
+    .underline2{
+        height: 3px;
+        max-width: 75px;
+    }
+}
+
+
+  /**  ( 3 )  Cyber Security  **/
+
+.CyberSecurity{
+    position: relative;
+    background-image: url(Imgs/bg_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.CyberSecurity_Content{
+    padding: 20px;
+    width: 90%;
+
+    
+}
+
+.CyberSecurity_h2{
+    font-size: 4rem;
+    font-weight: bold;
+    width: 50%;
+}
+
+.CyberSecurity_divs{
+    display: flex;
+    font-size: 16px;
+    padding-top: 35px;
+    gap: 20px;
+}
+
+.CyberSecurity_div_1{
+    display: list-item;
+    color: #adfdff;
+}
+
+.CyberSecurity_div_1 p{
+    color:#fefefe;
+}
+
+.CyberSecurity_div_2{
+    display: list-item;
+    color: #adfdff;
+}
+
+.CyberSecurity_div_2 p{
+    color: #fefefe;
+}
+
+
+.CyberSecurity_div_1,
+.CyberSecurity_div_2 {
+    opacity: 0; /* Start hidden */
+    transform: scale(0.8); /* Start smaller */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+}
+
+.CyberSecurity_div_1.burst,
+.CyberSecurity_div_2.burst {
+    opacity: 1; /* Fade in */
+    transform: scale(1); /* Scale to original size */
+}
+
+#bottomWord3 {
+    position: absolute; 
+    bottom: 10px; 
+    left: 10px;  
+    font-size:25px; 
+    font-weight: bold; 
+    direction: ltr;
+}
+
+.underline3 {
+    display: inline-block;
+    width: 0; 
+    height: 3px; 
+    background-color: #adfdff; 
+    margin-top: 5px; 
+    display: block;
+    transition: width 3s ease-in-out;
+}
+
+
+.underline3.active {
+    width: 180px;  /* Expand width to 100px */
+}
+
+ /*? Responsive Section Cyber Security  */
+@media (max-width: 600px){
+
+    .CyberSecurity_Content{
+        max-width: 540px;
+    }
+    .CyberSecurity_h2{
+        font-size: 2.5rem;
+    }
+    .CyberSecurity_divs{
+        font-size: 12px;
+    }
+    #bottomWord3{
+        font-size: 18px;
+    }
+    .underline3{
+        max-width: 130px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+
+    .CyberSecurity_Content{
+        max-width: 810px;
+    }
+    .CyberSecurity_h2{
+        font-size: 3.2rem;
+    }
+    .CyberSecurity_divs{
+        font-size: 15px;
+    }
+    #bottomWord3{
+        font-size: 20px;
+    }
+    .underline3{
+        max-width: 150px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px){
+    .CyberSecurity_Content{
+        max-width: 1090px;
+    }
+    .CyberSecurity_h2{
+        font-size: 4rem;
+    }
+    .CyberSecurity_divs{
+        font-size: 16px;
+    }
+    #bottomWord3{
+        font-size: 21px;
+    }
+    .underline3{
+        max-width: 180px;
+    }
+}
